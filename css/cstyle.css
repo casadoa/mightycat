@@ -1,0 +1,24 @@
+/* img set to 50% so it can take half of the page, or put the contact and */
+
+header {
+    position: relative;
+    left: 75%;
+}
+
+ .navigate {
+    display: inline;
+    border: solid 1px black;
+    width: 100px;
+  }
+  
+  .contact {
+    background-color: blueviolet;
+    border: solid 1px black;
+
+  }
+  
+  .scheduleForm {
+      border: solid 1px black;
+  }
+  5
+  
