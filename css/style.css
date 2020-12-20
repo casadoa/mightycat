@@ -206,9 +206,15 @@ img{
   flex-shrink: 1;
 }
 
+/* img set to 50% so it can take half of the page, or put the contact and */
 
+.navigate {
+  display: inline-block;
+}
 
-
+.contact {
+  background-color: blueviolet;
+}
 
 
 
