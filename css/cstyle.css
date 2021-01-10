@@ -2,13 +2,16 @@
 
 header {
     position: relative;
-    left: 75%;
 }
 
  .navigate {
     display: inline;
-    border: solid 1px black;
+    font-size: large;
     width: 100px;
+    padding: 4px;
+    font-family: "Oxygen";
+
+    border-bottom: solid orangered;
   }
   
   .contact {
@@ -20,5 +23,5 @@ header {
   .scheduleForm {
       border: solid 1px black;
   }
-  5
+  
   
