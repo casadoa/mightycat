@@ -1,27 +1,39 @@
 /* img set to 50% so it can take half of the page, or put the contact and */
 
-header {
-    position: relative;
+body{
+  background-color: orange;
 }
 
  .navigate {
     display: inline;
     font-size: large;
-    width: 100px;
+    width: 100%;
     padding: 4px;
     font-family: "Oxygen";
-
     border-bottom: solid orangered;
+   
   }
-  
-  .contact {
-    background-color: blueviolet;
-    border: solid 1px black;
 
+  .contact {
+    
+    margin: 0 auto;  
+    background-color: orange;
+    border: solid 1px black;
+    display: block;
+    font-size: x-large;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-align: center;
+    width: 50%;
   }
   
   .scheduleForm {
+      margin: 0 auto;
       border: solid 1px black;
+      display: block;
+      width: 50%;
+      font-size: 25px;
+      line-height: .8;
+
   }
-  
   

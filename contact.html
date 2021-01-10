@@ -32,6 +32,7 @@
 
 
   <!-- Contact List-->
+
 <article class="contact">
   <ul>
     <li>Mario Maura</li>
@@ -40,7 +41,6 @@
     <li>Mail: P.O. Box 104 <br> Clifton NJ, 07011 </li>
   </ul>
 </article>
-
 
 
 <!-- <h2>Schedule an appointment:</h2>
@@ -57,16 +57,14 @@ Comment:<br>
 </form>-->
 
 
-<!-- image of mightycat log and business registration information -->
+<!-- image of mightycat log and business registration information 
 <div class="logo">
 
-
-
 </div>
+-->
 
 
-
-<form id="myForm" class="scheduleForm">
+<form id="myForm" class="scheduleForm" action="mailto:andres.casado@yahoo.com" method="post" enctype="text/plain">
   
 <h2>Schedule an appointment:</h2>
   <label for="Name">Name:</label><br>
@@ -78,18 +76,19 @@ Comment:<br>
 <input type="text" name="comment" value="A small comment about your problem." size="50"><br><br>
   
   <section class="pest-type">
-    <label for="pests">Type of Pest?</label><br>
-    <select name="pests" id="pests" multiple>
-      <option value="mice">Mice</option>
-      <option value="roach">Roach</option>
-      <option value="ants">Ants</option>
-      <option value="rats">Rats</option>
-      <option value="bedbugs">Bed Bugs</option>
-      <option value="flies">Flies</option>
-      <option value="spiders">Spiders</option>
-      <option value="bees">Bees</option>
-      <option value="termites">Termites</option>
-    </select>
+    <span>Type of Pest(s):</span><br><br>
+    <label for="mice">Mice</label>
+    <input id="pest" name="pests" type="checkbox" value="mice">
+    <label for="roach">Roach</label>
+    <input id="pest" name="pests" type="checkbox" value="roach">
+    <label for=ants>Ants</label>
+    <input id="pest" name="pests" type="checkbox" value="ants">
+    <label for="rats">Rats</label>
+    <input id="pest" name="pests" type="checkbox" value="rats">
+    <label for="bedbug">Bed Bugs</label>
+    <input id="pest" name="pests" type="checkbox" value="rats">
+    <label for="other">Other</label>
+    <input id="pest" name="pests" type="checkbox" value="rats">
   </section>
 
 <br>
@@ -99,8 +98,9 @@ Comment:<br>
 </form>
 
 
+<!---
 <img src="images/zara2.png" alt="Zara">
-    
+-->
 </main>
 </body>
 
