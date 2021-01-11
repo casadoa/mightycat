@@ -1,7 +1,10 @@
 /* img set to 50% so it can take half of the page, or put the contact and */
 
 body{
-  background-color: orange;
+  background-image: url("/images/zara.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 498px 800px;
 }
 
  .navigate {
@@ -14,7 +17,7 @@ body{
   }
 
   .contact {
-    margin: 25px auto;  
+    margin: 15px auto;  
     background-color: orange;
     border: solid 1px black;
     display: block;
