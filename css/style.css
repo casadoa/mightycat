@@ -155,7 +155,14 @@ body{
   display: flex;
 
 }
-
+.navigate {
+  display: inline;
+  font-size: 20px;
+  width: 100%;
+  padding: 4px;
+  font-family: "Oxygen";
+  border-bottom: solid orangered;
+}
 
 
 .logo{
