@@ -1,0 +1,39 @@
+body {
+    
+
+  background-image: url("/images/mclogo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: orange;
+
+}
+
+div{
+    display: flex;
+}
+h1{
+    color: black;
+}
+
+.header{
+    margin-top: 50px;
+    font-size: xx-large;
+    justify-content: center;
+}
+
+.nav{
+    padding-top: 175px;
+    font-size: xx-large;
+    justify-content: center;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.pests{
+    justify-content: center;
+}
+
+ul{
+    list-style-type: none;
+    color: orange;
+}
