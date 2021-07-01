@@ -130,7 +130,7 @@ html {
     
 
   }
-*/
+
   #generator{
     border: 1px solid black;
       color: lightslategray;
@@ -147,7 +147,7 @@ html {
 
 
 /* move this css to its own css file for #contact.html*/
-
+/*
 
 
 body{
@@ -209,10 +209,137 @@ img{
   
   height: auto;
   max-width: 100%;
-  /*display: flex;*/
   flex-shrink: 1;
+}
+*/
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+
+  
+  border: 8px solid #db6a40;
+  border-style: dotted;
+  
+  background: linear-gradient(#FFB56D, #FF8261);
+  /*background: url('../images/mclogo-3.png'), linear-gradient(#FFB56D, #FF8261);
+  
+  background-image: url('../images/mclogo-3.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+*/
 }
 
 
 
+/* HEADER / NAV AREA*/
 
+
+
+.container {
+  width: 100%;
+  padding-top: 80px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.nav {
+  width: 300px;
+  /*
+  border: 1px solid palegoldenrod;
+*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+header li .name {
+  font-family: 'Satisfy', crusive, sans-serif;
+  font-size: 48px;
+}
+
+header li h2 {
+  font-family: 'Courgette';
+  font-size: 30px;
+}
+
+header li {
+  list-style: none;
+  line-height: 1.4;
+}
+
+header li a {
+  font-size: 24px;
+}
+/* END of HEADER // NAV */
+
+
+
+
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main img {
+  width: 35%;
+  height: auto;
+  opacity: 0.5;
+}
+
+main h2 {
+  font-family: 'Courgette';
+  margin-right: 5px;
+}
+
+.saying {
+  padding-top: 15px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Courgette';
+}
+/*
+#bg_logo {
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  opacity: 0.7;
+}*/
+
+footer {
+  height: 55px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+footer #f_name {
+  margin-left: 15px;
+  padding-left: 50px;
+  opacity: 0.1;
+}

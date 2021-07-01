@@ -42,3 +42,99 @@ body{
       text-align: center;
   }
   
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+  }
+  
+  /* HEADER / NAV AREA*/
+  header {
+      /*
+    background: url('../images/navbackground.jpg') no-repeat center center; 
+    background-size: cover;
+    */
+    background-color: white;
+    height: 100px;
+    text-align: center; 
+    border: 1px solid green;
+    font-family: 'Special Elite';
+  }
+  
+  
+  header h1 {
+    color: rgb(23, 65, 157);
+    line-height: 80px; 
+    font-size: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 80px;
+
+
+    text-transform: uppercase; 
+    transition-property: font-size;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+
+    
+    border: 3px solid purple;
+  }
+  
+
+  header h1:hover {
+    cursor: grab; 
+    font-size: 100px;
+  }
+  
+  nav ul li {
+    display: inline-block; 
+    height: 20px;
+    padding: 10px 35px; 
+    border: 1px solid red;
+    letter-spacing: 0.1em;
+    font-family: 'Special Elite';
+  }
+ 
+ a{
+    color: rgb(23, 65, 157);
+    font-size: 1em;
+    padding: 5px 10px;
+
+
+     transition-property: background, font-size;
+     transition-duration: 1.5s;
+     transition-timing-function: ease-in-out; 
+     border: 1px solid orange;
+ }
+
+  .nav ul li a:hover {
+    background: #aebdcf;
+    cursor: pointer;  
+    font-size: 36px;
+  }
+
+  a[href*='about']{
+      color: #696C9B;
+  }
+  a[href*='contact']{
+    color: #5057D4;
+}
+a[href*='experience']{
+    color: #202354;
+}
+a[href*='education']{
+    color: #333887;
+}
