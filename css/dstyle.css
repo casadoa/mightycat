@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+html {
+    height: 100%;
+    border: 8px solid #db6a40;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+  
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    
+
+    background: linear-gradient(#FFB56D, #FF8261);
+
+
+
+    /*background: url('../images/mclogo-3.png'), linear-gradient(#FFB56D, #FF8261);
+    
+    background-image: url('../images/mclogo-3.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  */
+  }
+
+  
+
+/* HEADER / NAV AREA*/
+
+
+
+.container {
+    width: 100%;
+    padding-top: 15px;
+    text-align: center;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  
+  .nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  nav li {
+    margin-right: 10px;
+  }
+  
+  header .name {
+    font-family: 'Satisfy', crusive, sans-serif;
+    font-size: 48px;
+  }
+  
+  header li h2 {
+    font-family: 'Courgette';
+    font-size: 30px;
+  }
+  
+  header li {
+    list-style-type: none;
+    line-height: 1.4;
+  }
+  
+  header li a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #176881;
+    transition-property: background;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-in-out;
+ }
+
+header li a:hover {
+    background: #aebdcf;
+    cursor: pointer;  
+}
+
+  header li a:visited {
+      color: #4f55af;
+  }
+  /* END of HEADER // NAV */
+  
+
+  /*****  MAIN   ****/
+
+main {
+    height: 650px;
+}
+
+.banner {
+    padding-left: 30px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: rgb(134, 31, 31);
+    margin-bottom: 10px;
+}
+
+ul .product{
+    display: flex;
+    width: 100%;
+    justify-content: center;    
+    align-content: center;
+    padding-top: 5px;
+
+}
+
+
+.product {
+    width: 100%;
+    margin-bottom: 7px;
+    flex: 1;
+}
+.pest{
+    width: 100px;
+    height: 100px;
+}
+.pest_name {
+    font-size: 24px;
+}
+
+img {
+    display: none;
+}
+
+.bg_logo {
+    display: initial;
+}
+
+main a {
+    color: #176881;
+
+    padding: 5px 10px;
+    margin-top: 0px;
+    transition-property: background;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-in-out;
+ }
+
+main ul li a:hover {
+    background: #aebdcf;
+    cursor: pointer;  
+}
+
+i {
+    margin-right: 5px;
+}
+
+
+/****** END MAIN ******/
+
+
+/***** FOOTER *****/
+
+
+footer p {
+    margin-top: 10px;
+    text-align: center;
+}
