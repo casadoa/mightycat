@@ -60,24 +60,59 @@
   
      <label for="Number">Number:</label><br>
      <input id="Number" name="number" value="123-456-7890"><br><br>
+     
+     <label for="Address">Address:</label><br>
+     <input id="address" name="address" value="123 Shiar Lanes"><br><br>
+    
+
+
+     <label for="city">City / Town:</label><br>
+     <input type="text" list="cities" id="city" class="cities" name="city">
+     <datalist id="cities">
+       <option value="Manhattan"></option>
+       <option value="Brooklyn"></option>
+       <option value="Queens"></option>
+       <option value="Bronx"></option>
+       <option value="Clifton"></option>
+       <option value="Newark"></option>
+       <option value="Teaneck"></option>
+       <option value="Union"></option>
+       <option value="East Orange"></option>
+       <option value="West Orange"></option>
+       <option value="Irvington"></option>
+       <option value="West New York"></option>
+       <option value="Garfield"></option>
+       <option value="Montclair"></option>
+       <option value="North Bergen"></option>
+       <option value="Paterson"></option>
+       <option value="Livingston"></option>
+       <option value="Other"></option>
+     </datalist><br>
+
+     <label for="State">State:</label><br>
+     <label for="ny">New York</label>
+     <input id="ny" class="state" name="ny" type="checkbox" value="NY">
+     <label for="nj">New Jersey</label>
+     <input id="nj" class="state" name="nj" type="checkbox" value="NJ"><br><br>
+
      <label for="Comment">Comment:</label><br>
      <input type="text" name="comment" value="A small comment about your problem." size="50"><br><br>
   
+
      <form id="cForm" class="checkboxForm">
-      <span>Type of Pest(s):</span><br><br>
-    
+      <label class="title" for="mice">Type of Pest(s):</label><br>
        <label for="mice">Mice</label>
-       <input id="pest" name="pests" type="checkbox" value="mice">
+       <input id="pest" class="pest" name="pests" type="checkbox" value="mice">
        <label for="roach">Roach</label>
-       <input id="pest" name="pests" type="checkbox" value="roach">
+       <input id="pest" class="pest" name="pests" type="checkbox" value="roach">
        <label for=ants>Ants</label>
-       <input id="pest" name="pests" type="checkbox" value="ants">
+       <input id="pest" class="pest" name="pests" type="checkbox" value="ants">
        <label for="rats">Rats</label>
-       <input id="pest" name="pests" type="checkbox" value="rats">
+       <input id="pest" class="pest" name="pests" type="checkbox" value="rats">
        <label for="bedbug">Bed Bugs</label>
-       <input id="pest" name="pests" type="checkbox" value="rats">
+       <input id="pest" class="pest" name="pests" type="checkbox" value="bedbugs">
        <label for="other">Other</label>
-       <input id="pest" name="pests" type="checkbox" value="rats">
+       <input id="pest" class="pest" name="pests" type="checkbox" value="other">
      </form>
 
       <br>
@@ -94,7 +129,7 @@
       <li>Mario Maura</li>
       <li>Cell: 646-246-7899</li>
       <li>Email: mightycatinc@gmail.com</li>
-      <li>Mail: P.O. Box 104 <br> Clifton NJ, 07011 </li>
+      <li>Mail: P.O. Box 104 Clifton NJ, 07011 </li>
     </ul>
   </article>
   
