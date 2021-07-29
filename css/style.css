@@ -232,9 +232,10 @@ body {
   font-size: 16px;
   font-weight: 100;
 
-  
-  border: 8px solid #db6a40;
-  border-style: dotted;
+  border-left: 8px dotted #db6a40;
+  border-top: 8px dotted #db6a40;
+  border-right: 8px dotted #db6a40;
+
   
   background: linear-gradient(#FFB56D, #FF8261);
   /*background: url('../images/mclogo-3.png'), linear-gradient(#FFB56D, #FF8261);
@@ -261,6 +262,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
   
 }
 
@@ -274,6 +276,10 @@ body {
   justify-content: center;
   align-items: center;
 
+}
+
+header {
+  margin-bottom: 35px;
 }
 
 header li .name {
@@ -302,8 +308,10 @@ header li a {
 
 main {
   display: flex;
+  height: 50%;
   justify-content: center;
   align-items: center;
+  height: 450px;
 }
 
 main img {
@@ -318,6 +326,7 @@ main h2 {
 }
 
 .saying {
+  margin-top: 30px;
   padding-top: 15px;
   text-align: center;
   font-size: 30px;
@@ -343,3 +352,108 @@ footer #f_name {
   padding-left: 50px;
   opacity: 0.1;
 }
+
+
+/*  MEDIA QUERIES  */
+
+
+/*   TABLET  */
+
+@media only screen and (max-width: 768px) {
+
+}
+
+
+
+
+
+/*   MOBILE  */
+
+@media only screen and (max-width: 480px), (orientation: portrait) {
+  
+  .bg_for_logo img {
+    width: 500px;
+    height: 450px;
+  }
+
+
+  .container {
+    width: 100%;
+    padding-top: 225px;
+    text-align: center;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .nav {
+    margin-top: 10em;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+
+  header li .name {
+    font-family: 'Satisfy', crusive, sans-serif;
+    font-size: 115px;
+    margin-bottom: 30px;
+  }
+  
+  header li h2 {
+    font-family: 'Courgette';
+    font-size: 85px;
+    margin-bottom: 30px;
+  }
+  
+  header li {
+    list-style: none;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  
+  header li a {
+    font-size: 60px;
+    padding-bottom: 7px;
+    text-decoration-style: none;
+    color: #384863;
+    border-bottom-style: dashed;
+  }
+
+  
+  main {
+    display: none;
+  }
+  aside {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  p.saying {
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+  }
+
+  p.fchild {
+    font-size: 20px;
+  }
+}
+
+/*
+@media only screen and (max-height: 750px) {
+  main img, main h2 {
+    display: none;
+  }
+}
+*/
