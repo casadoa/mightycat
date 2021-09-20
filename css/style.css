@@ -332,6 +332,57 @@ main h2 {
   font-size: 30px;
   font-family: 'Courgette';
 }
+
+
+.employeesJs{
+  margin: 7px auto;
+
+  padding: 10px;
+  text-align: center;
+  width: 97%;
+  bottom: 5px;
+
+  position: relative;
+  z-index: 5;
+  /*bottom: -375px;*/
+  
+  height: 20px;
+  font-family: "Proza Libre", serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #142033;
+  
+}
+/*
+.employeesJs:hover {
+  bottom: 0;
+  height: 400px;
+  transition: bottom 1.5s ease-in 0.5s;
+}
+*/
+#employee {
+  margin: 0 25px;
+  text-decoration: underline wavy;
+}
+.employeeWord{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.pics{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  visibility: hidden;
+
+}
+
+
+.cat {
+  margin: 0 10px;
+  border: 5px solid rgb(221, 93, 18);
+}
+
 /*
 #bg_logo {
   position: fixed;
@@ -445,10 +496,94 @@ footer #f_name {
     text-align: center;
   }
 
+
   p.fchild {
     font-size: 20px;
   }
 }
+
+@media only screen and (max-width: 480px), (orientation: landscape) {
+  
+  .bg_for_logo img {
+    width: 500px;
+    height: 450px;
+  }
+
+
+  .container {
+    width: 100%;
+    padding-top: 225px;
+    text-align: center;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .nav {
+    margin-top: 10em;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+
+  header li .name {
+    font-family: 'Satisfy', crusive, sans-serif;
+    font-size: 115px;
+    margin-bottom: 30px;
+  }
+  
+  header li h2 {
+    font-family: 'Courgette';
+    font-size: 85px;
+    margin-bottom: 30px;
+  }
+  
+  header li {
+    list-style: none;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  
+  header li a {
+    font-size: 60px;
+    padding-bottom: 7px;
+    text-decoration-style: none;
+    color: #384863;
+    border-bottom-style: dashed;
+  }
+
+  
+  main {
+    display: none;
+  }
+  aside {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  p.saying {
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+  }
+
+  p.fchild {
+    font-size: 20px;
+  }
+}
+
+ 
 
 /*
 @media only screen and (max-height: 750px) {

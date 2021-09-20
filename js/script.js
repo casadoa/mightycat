@@ -47,7 +47,7 @@ function newStyle() {
 
 /************************************* */
 /* change fonts of safety data sheets to different font when clicked */
-
+/*
 let element = document.querySelector("article");
 
 function changeFont (){
@@ -60,5 +60,55 @@ element.onclick = changeFont;
 
 
 
-
 /***************************************** */
+
+
+let emp = document.getElementById('employee');
+let k = document.getElementById('kitties');
+let l = document.getElementById('employeeTitle');
+
+
+// This function programs the "Reset" button to return the boxes to their default styles
+let resetTwo = function() {
+  emp.style.width = '';
+  emp.style.height = '';
+  emp.style.backgroundColor = '';
+  l.style.height = '';
+  k.style.visibility = '';
+  emp.style.textDecoration = '';
+};
+resetButton.onclick = resetTwo;
+
+
+
+function changeTwo() {
+  emp.style.width = '80%';
+  k.style.visibility = 'visible';
+  l.style.height = '325px';
+  emp.style.textDecoration = 'none';
+  
+}
+
+
+let start = Date.now();
+
+let timer = setInterval(function() {
+
+  let timePassed = Date.now() - start;
+
+  if(timePassed >= 3000){
+    clearInterval(timer);
+    return;
+  }
+  draw(timePassed);
+}, 20);
+
+function draw(timePassed){
+  //l.style.height = timePassed / 10 + 'px';
+}
+
+
+//emp.addEventListener('mouseover', changeTwo);
+l.onmouseover = changeTwo;
+emp.onmouseout = resetTwo;
+l.onmouseout = resetTwo;
