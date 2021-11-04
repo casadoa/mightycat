@@ -1,140 +1,322 @@
-/* img set to 50% so it can take half of the page, or put the contact and */
-
-body{
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
   
-  /*background-image: url("/images/mclogo.jpg");*/
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: orange;
-
+html {
+  height: 100%;
+}
   
+html, body {
+  margin: 0;
+  padding: 0;
+}
+       
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  background: linear-gradient(#FFB56D, #FF8261);
+}
+ 
+  /* HEADER / NAV AREA*/  
+.container {
+  width: 100%;
+  padding-top: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(#FF8261, #FFB56D);;
+}
+    
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+  
+nav li {
+  margin-right: 10px;
+  font-family: 'Satisfy', cursive, sans-serif;
+}
+   
+header {
+  border-bottom: 2px solid #db6a40;
+  padding-bottom: 45px;
+}
+    
+header .name {
+  font-family: 'Satisfy', cursive, sans-serif;
+  font-size: 48px;
+}
+    
+header li h2 {
+  font-family: 'Courgette';
+  font-size: 30px;
+}
+    
+header li {
+  list-style-type: none;
+  line-height: 1.4;
+}
+    
+header li a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #176881;
+  transition-property: background;  
+  transition-duration: 1.5s;
+  transition-timing-function: ease-in-out;
+}
+  
+header li a:hover {
+  background: #aebdcf;
+  cursor: pointer;  
+}
+header li a:visited {
+  color: #4f55af;
+}  
+    /* END of HEADER // NAV */
+     
+    /*****  MAIN   ****/
+main {
+  background: linear-gradient(#FFB56D, #FF8261);
+  font-size: 18px;
+}
+  
+.banner {
+  padding-top: 20px;
+  padding-left: 75px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: rgb(134, 31, 31);
+  margin-bottom: 35px;    
+  font-size: 26px;
+  font-family: 'Courgette', cursive, sans-serif;
+}
+  
+.scheduleForm {
+  padding-bottom: 10px;
+  border-bottom: 5px double #FF8261;
+  border: 5px groove #FF8261;
+  border-radius: 15px;
+  padding: 1em;
+  background: #E8854D;
+  margin-top: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
- .navigate {
-    display: inline;
-    font-size: 20px;
-    width: 100%;
-    padding: 4px;
-    font-family: "Oxygen";
-    border-bottom: solid orangered;
+form h2 {
+  margin-bottom: 5px;
+  font-size: 32px;
+  color: #141414;
+}
+  
+form label {
+  font-size: 24px;
+  font-weight: bold;
+  color: #141414;
+}
+  
+form input {
+  font-size: 20px;
+  margin: 5px 0;
+}
+  
+input[type=checkbox] {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+  
+select {
+  min-width: 150px;
+  font-size: 22px;
+}
+
+input.state, input.pest {
+  width: 25px;
+  height: 25px;
+  font-size: 22px;
+}
+  
+input:invalid {
+  border-color: #900;
+  background-color: #FDD;
+}
+
+input[type=submit] {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  margin-left: 200px;
+  margin-right: auto; 
+  border: 1px solid rgba(192, 41, 41, 0.623);
+  box-shadow: 0px 5px;
+  transition-property: background;
+  transition-duration: 1.0s;
+  transition-timing-function: ease-in-out;
+}
+  
+input[type=submit]:hover {
+  background: rosybrown;
+  cursor: pointer;
+}
+  
+input[type=submit]:active {
+  margin-top: 5px;
+  color: black;
+  box-shadow: 0px 0px;
+}
+
+.reset {
+  font-size: 20px;
+}
+.contact {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;  
+  font-size: 32px;
+}
+
+.contact ul {
+  list-style-type: none;
+  font-family: 'Courgette';
+  line-height: 1.8;
+  letter-spacing: 0.6; 
+  padding: 0px 30px;
+  border-left: 2px ridge rgba(192, 41, 41, 0.623);
+  border-right: 2px ridge rgba(192, 41, 41, 0.623);
+}
+  /****** END MAIN ******/
+  /******FOOTER**********/
+  footer {
+  background: linear-gradient(#FF8261, #FFB56D);
+}
+
+
+
+
+/*   MOBILE  */
+
+@media only screen and (max-width: 480px), (orientation: portrait) {
+  
+  .bg_for_logo img {
+    width: 500px;
+    height: 450px;
   }
 
-  .contact {
-    margin: 15px auto;  
-    /*background-color: orange;*/
-    border: solid 1px black;
-    display: block;
-    font-size: x-large;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    line-height: 1.3;
+
+  .container {
+    width: 100%;
     text-align: center;
-    width: 50%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none;
+  }
+
+  .nav {
+    margin-top: 10em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+   header li .name {
+    font-family: 'Satisfy', cursive, sans-serif;
+    font-size: 112px;
+    margin-bottom: 30px;
+  }
+  
+  header li h2 {
+    font-family: 'Courgette';
+    font-size: 95px;
+    margin-bottom: 25px;
+  }
+  header li {
+    list-style: none;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  
+  header li a {
+    font-size: 32px;
+    padding-bottom: 6px;
+    text-decoration-style: none;
+    color: #384863;
+    border-bottom-style: dashed;
+  }
+
+  .banner {
+    text-align: center;
+    text-underline-offset: 7px;
+    border-spacing: 7px;
+    font-size: 45px;
+  }
+
+  main {
+     width: 100%;
   }
   
   .scheduleForm {
-      margin: 0 auto;
-      border: solid 1px black;
-      display: block;
-      width: 50%;
-      font-size: 25px;
-      line-height: .8;
-      text-align: center;
+    font-size: 25px;/*46px*/
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+    background-color: #FF9E54;
   }
   
-
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-  }
-  
-
-  body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 100;
-  }
-  
-  /* HEADER / NAV AREA*/
-  header {
-      /*
-    background: url('../images/navbackground.jpg') no-repeat center center; 
-    background-size: cover;
-    */
-    background-color: white;
-    height: 100px;
-    text-align: center; 
-    border: 1px solid green;
-    font-family: 'Special Elite';
-  }
-  
-  
-  header h1 {
-    color: rgb(23, 65, 157);
-    line-height: 80px; 
-    font-size: 60px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-right: 80px;
-
-
-    text-transform: uppercase; 
-    transition-property: font-size;
-    transition-duration: 3s;
-    transition-timing-function: ease-in-out;
-
-    
-    border: 3px solid purple;
-  }
-  
-
-  header h1:hover {
-    cursor: grab; 
-    font-size: 100px;
-  }
-  
-  nav ul li {
-    display: inline-block; 
-    height: 20px;
-    padding: 10px 35px; 
-    border: 1px solid red;
-    letter-spacing: 0.1em;
-    font-family: 'Special Elite';
+  input.state, input.pest {
+    width: 15px;
+    height: 15px;
+    font-size: 20px;
   }
  
- a{
-    color: rgb(23, 65, 157);
-    font-size: 1em;
-    padding: 5px 10px;
-
-
-     transition-property: background, font-size;
-     transition-duration: 1.5s;
-     transition-timing-function: ease-in-out; 
-     border: 1px solid orange;
- }
-
-  .nav ul li a:hover {
-    background: #aebdcf;
-    cursor: pointer;  
-    font-size: 36px;
+  .reset {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .contact {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;  
+    font-size: 22px;
   }
 
-  a[href*='about']{
-      color: #696C9B;
+  .contact ul {
+    list-style-type: none;
+    font-family: 'Courgette';
+    line-height: 1.5;
+    letter-spacing: 0.5; 
+    padding: 0px 5px;
+    border-left: 1px ridge rgba(192, 41, 41, 0.623);
+    border-right: 1px ridge rgba(192, 41, 41, 0.623);
   }
-  a[href*='contact']{
-    color: #5057D4;
 }
-a[href*='experience']{
-    color: #202354;
-}
-a[href*='education']{
-    color: #333887;
-}
+  
+  
+  
+  /*
+  
+  ^((?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\]))$
+  
+  
+  //regex expression for email
+  */ 

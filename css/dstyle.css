@@ -1,12 +1,12 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
 }
 
 html {
-    height: 100%;
-    border: 8px solid #db6a40;
+  /*height: 100%;*/
+  border: 8px solid #db6a40;
 }
 
 html, body {
@@ -14,161 +14,161 @@ html, body {
   padding: 0;
 }
   
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 100;
-    
-
-    background: linear-gradient(#FFB56D, #FF8261);
-
-
-
-    /*background: url('../images/mclogo-3.png'), linear-gradient(#FFB56D, #FF8261);
-    
-    background-image: url('../images/mclogo-3.png');
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-  */
-  }
-
-  
-
-/* HEADER / NAV AREA*/
-
-
-
-.container {
-    width: 100%;
-    padding-top: 15px;
-    text-align: center;
-  
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    
-  }
-  
-  .nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-  }
-
-  nav li {
-    margin-right: 10px;
-  }
-  
-  header .name {
-    font-family: 'Satisfy', crusive, sans-serif;
-    font-size: 48px;
-  }
-  
-  header li h2 {
-    font-family: 'Courgette';
-    font-size: 30px;
-  }
-  
-  header li {
-    list-style-type: none;
-    line-height: 1.4;
-  }
-  
-  header li a {
-    font-size: 24px;
-    text-decoration: none;
-    color: #176881;
-    transition-property: background;
-    transition-duration: 1.5s;
-    transition-timing-function: ease-in-out;
- }
-
-header li a:hover {
-    background: #aebdcf;
-    cursor: pointer;  
+body {
+  font-size: 16px;
+  font-weight: 100;
+  background: linear-gradient(#FFB56D, #FF8261);
 }
 
-  header li a:visited {
-      color: #4f55af;
-  }
+  
+/* HEADER / NAV AREA*/
+
+.container {
+  width: 100%;
+  padding-top: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(#FF8261, #FFB56D);;
+}
+  
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav li {
+  margin-right: 10px;
+  font-family: 'Satisfy', cursive, sans-serif;
+} 
+
+header {
+  border-bottom: 2px solid #db6a40;
+  padding-bottom: 25px;
+}
+  
+header .name {
+  font-family: 'Satisfy', cursive, sans-serif;
+  font-size: 48px;
+}
+  
+header li h2 {
+  font-family: 'Courgette';
+  font-size: 30px;
+}
+  
+header li {
+  list-style-type: none;
+  line-height: 1.4;
+}
+  
+header li a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #176881;
+  transition-property: background;
+  transition-duration: 1.5s;
+  transition-timing-function: ease-in-out;
+}
+
+header li a:hover {
+  background: #aebdcf;
+  cursor: pointer;  
+}
+
+header li a:visited {
+  color: #4f55af;
+}
   /* END of HEADER // NAV */
   
 
   /*****  MAIN   ****/
 
 main {
-    height: 650px;
+  background: linear-gradient(#FFB56D, #FF8261);
+  /*height: 650px;*/
 }
 
 .banner {
-    padding-left: 30px;
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-decoration-color: rgb(134, 31, 31);
-    margin-bottom: 10px;
+  padding-top: 20px;
+  padding-left: 75px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  text-decoration-color: rgb(134, 31, 31);
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-family: 'Satisfy', cursive, sans-serif;
 }
 
-ul .product{
-    display: flex;
-    width: 100%;
-    justify-content: center;    
-    align-content: center;
-    padding-top: 5px;
-
+ul .product {
+  display: flex;
+  width: 100%;
+  justify-content: center;    
+  align-content: center;
+  padding-top: 5px;
 }
 
 
 .product {
-    width: 100%;
-    margin-bottom: 7px;
-    flex: 1;
-}
-.pest{
-    width: 100px;
-    height: 100px;
-}
-.pest_name {
-    font-size: 24px;
+  width: 100%;
+  margin-bottom: 7px;
+  flex: 1;
 }
 
-img {
-    display: none;
+.pest {
+  width: 100px;
+  height: 100px;
+  opacity: 0.7;
 }
+
+.pest_name {
+  font-size: 24px;
+}
+
 
 .bg_logo {
-    display: initial;
+  display: initial;
 }
 
 main a {
-    color: #176881;
-
-    padding: 5px 10px;
-    margin-top: 0px;
-    transition-property: background;
-    transition-duration: 1.5s;
-    transition-timing-function: ease-in-out;
- }
+  color: #176881;
+  padding: 5px 10px;
+  margin-top: 0px;
+  transition-property: background;
+  transition-duration: 1.5s;
+  transition-timing-function: ease-in-out;
+}
 
 main ul li a:hover {
-    background: #aebdcf;
-    cursor: pointer;  
+  background: #aebdcf;
+  cursor: pointer;  
 }
 
 i {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
+.pest:hover {
+  position: relative;
+  top: -25px;
+  left: -35px;
+  width: 300px;
+  height: auto;
+  display: block;
+  z-index: 999;
+  opacity: 1;
+}
 
 /****** END MAIN ******/
 
 
 /***** FOOTER *****/
-
 
 footer p {
     margin-top: 10px;
@@ -177,7 +177,89 @@ footer p {
 
 
 
+/*   MOBILE  */
 
-.pest1 {
-    display: initial;
+@media only screen and (max-width: 480px), (orientation: portrait) {
+  
+  .bg_for_logo img {
+    width: 500px;
+    height: 450px;
+  }
+
+
+  .container {
+    width: 100%;
+    /*padding-top: 225px;*/
+    text-align: center;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  header {
+    border-bottom: none;
+  }
+  
+  .nav {
+    margin-top: 10em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+   header li .name {
+    font-family: 'Satisfy', cursive, sans-serif;
+    font-size: 112px;
+    margin-bottom: 30px;
+  }
+  
+  header li h2 {
+    font-family: 'Courgette';
+    font-size: 95px;
+    margin-bottom: 25px;
+  }
+  header li {
+    list-style: none;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  
+  header li a {
+    font-size: 32px;
+    padding-bottom: 6px;
+    text-decoration-style: none;
+    color: #384863;
+    border-bottom-style: dashed;
+  }
+
+  .banner {
+    text-align: center;
+    text-underline-offset: 7px;
+    border-spacing: 7px;
+  }
+
+  .pest{
+    display: none;
+  }
+
+  .pest_name{
+    font-size: 34px;
+    line-height: 1.2;
+  }
+  
+  .product {
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+    margin-left: 8px;
+  }
+
+  footer {
+    font-size: 20px;
+  }
 }

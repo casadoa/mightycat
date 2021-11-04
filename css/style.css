@@ -1,219 +1,3 @@
-/* Universal Styles 
-
-html {
-    font-size: 16px;
-  }
-  
-  body {
-    min-width: 475px;
-    font-family: "Cormorant Garamond", serif;
-  }
-  
-  @media only screen and (max-width: 810px) {
-    html {
-      font-size: 14px;
-    }
-  }
-  
-  
-  @media only screen and (max-width: 540px) {
-    html {
-      font-size: 12px;
-    }
-  }
- 
-   Navigation Bar 
-  
-  nav {
-    position: fixed;
-    z-index: 5;
-    left: -17.8em;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding-left: 5rem;
-    padding-right: 2rem;
-    background: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-6/nav_background.png") center center repeat;
-    font-family: "Proza Libre", serif;
-    font-size: 18px;
-    line-height: 2.2;
-    font-weight: bold;
-    color: #142033;
-    transition: left 1.5s ease 0.5s;
-  }
-  
-  nav:hover {
-    left: 0;
-  }
-  
-  nav .hover-content {
-    margin-right: 3em;
-  }
-  
-  nav h2 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 2.6em;
-    font-weight: bold;
-    color: #639eff;
-  }
-  
-  nav h3 {
-    padding-bottom: 1.1em;
-  }
-  
-  nav ol {
-    list-style: upper-roman outside;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.5s linear 0.5s;
-  }
-  
-  nav a:hover,
-  nav a.active {
-    color: #639eff;
-  }
-  */
-
-
-  /*
-  body{
-    background-color: #FFB547;
-  }
-  .banner{
-    text-align: center;
-    font-family: "Cormorant Garamond", serif;
-    color: black;
-    font-weight: bold;
-    border: 1px dotted black;
-    padding: 5px;
-    margin-bottom: 20px;
-    width: 100%;
-    height:100%;
-    font-size: 25px;
-    text-align: center;
-  }
-  .datalist{
-      border: 1px solid black;
-      color: orangered;
-      text-align: center;
-      font-size: 40px;
-      line-height: 60px;
-  }
-  a{
-      text-decoration: none;
-  }
-  a:link{
-    color: blue;
-  }
-  a:visited{
-    color: purple;
-  }
-  a:hover{
-    color: orange;
-    font-size: 50px;
-    transition: color 0.5s linear 1s;
-    cursor: pointer;
-  }
-  a:active{
-    color: red;
-    transition: color 0.5s linear 1s;
-    transition: font-size 0.5s;
-  }
-
-
-
-
-  /*#buttoncontainer{
-    
-
-  }
-
-  #generator{
-    border: 1px solid black;
-      color: lightslategray;
-      text-align: center;
-      font-size: 40px;
-      line-height: 60px;
-  }
-
-
-
-*/
-
-
-
-
-/* move this css to its own css file for #contact.html*/
-/*
-
-
-body{
-  background-color: #0f040f;
-  display: flex;
-
-}
-.navigate {
-  display: inline;
-  font-size: 20px;
-  width: 100%;
-  padding: 4px;
-  font-family: "Oxygen";
-  border-bottom: solid orangered;
-}
-
-
-.logo{
-  background-image: url(#);
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-size: cover;
-}
-
-
-
-
-
-  .scheduleForm{
-    border: solid 1px black;
-    text-align: center;
-    
-  }
-
-.scheduleForm, img{
-  
-  height: 300px;
-  width: 300px;
-}
-
-
-.banner{
-  color: blue;
-  text-align: center;
-}
-
-.contact{
-  text-align: center;
-}
-ul {
-  list-style-position: inside;
-  font-size: large;
-}
-
-
-
-img{
-  border-radius: 50px;
-  
-  height: auto;
-  max-width: 100%;
-  flex-shrink: 1;
-}
-*/
-
-
 
 *{
   margin: 0;
@@ -235,7 +19,6 @@ body {
   border-left: 8px dotted #db6a40;
   border-top: 8px dotted #db6a40;
   border-right: 8px dotted #db6a40;
-
   
   background: linear-gradient(#FFB56D, #FF8261);
   /*background: url('../images/mclogo-3.png'), linear-gradient(#FFB56D, #FF8261);
@@ -262,7 +45,6 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
   
 }
 
@@ -283,7 +65,7 @@ header {
 }
 
 header li .name {
-  font-family: 'Satisfy', crusive, sans-serif;
+  font-family: 'Satisfy', cursive, sans-serif;
   font-size: 48px;
 }
 
@@ -298,17 +80,27 @@ header li {
 }
 
 header li a {
-  font-size: 24px;
+  font-size: 26px;
+  font-family: 'Satisfy', cursive, sans-serif;
+  color: #176881;
+  transition-property: background;
+  transition-duration: 1.5s;
+  transition-timing-function: ease-in-out;
+}
+
+header li a:hover {
+  background: #aebdcf;
+  cursor: pointer;  
+}
+
+header li a:visited {
+  color: #4f55af;
 }
 /* END of HEADER // NAV */
 
 
-
-
-
 main {
   display: flex;
-  height: 50%;
   justify-content: center;
   align-items: center;
   height: 450px;
@@ -320,76 +112,81 @@ main img {
   opacity: 0.6;
 }
 
-main h2 {
+.pestlist {
   font-family: 'Courgette';
   margin-right: 5px;
 }
 
 .saying {
   margin-top: 30px;
+  margin-bottom: 20px;
   padding-top: 15px;
   text-align: center;
   font-size: 30px;
   font-family: 'Courgette';
 }
 
-
-.employeesJs{
+.employees {
   margin: 7px auto;
-
   padding: 10px;
   text-align: center;
   width: 97%;
-  bottom: 5px;
-
+  bottom: -25px;
   position: relative;
   z-index: 5;
-  /*bottom: -375px;*/
   
-  height: 20px;
+  height: 10px;
   font-family: "Proza Libre", serif;
   font-size: 18px;
   font-weight: bold;
   color: #142033;
+  overflow: hidden;
   
+  -webkit-transition: all 1.5s ease-in 0.5s;
+  -moz-transition: all 1.5s ease-in 0.5s;
+  -o-transition: all 1.5s ease-in 0.5s;
+  -ms-transition: all 1.5s ease-in 0.5s;
+  transition: all 1.5s ease-in 0.5s;
 }
-/*
-.employeesJs:hover {
-  bottom: 0;
+
+.employees:hover {
+  bottom: 250px;
   height: 400px;
-  transition: bottom 1.5s ease-in 0.5s;
+  background: rgb(189, 180, 170);
 }
-*/
+
 #employee {
   margin: 0 25px;
   text-decoration: underline wavy;
+  font-family: 'Bookman';
 }
+
 .employeeWord{
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  margin-bottom: 10px;
 }
+
 .pics{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  visibility: hidden;
-
 }
 
+.cname {
+  font-family: 'Courgette', sans-serif;
+  font-size: 20px;
+  text-decoration: underline;
+}
 
-.cat {
+.kit {
   margin: 0 10px;
-  border: 5px solid rgb(221, 93, 18);
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 300px;
+  max-height: 300px;
 }
-
-/*
-#bg_logo {
-  position: fixed;
-  top: 25%;
-  left: 25%;
-  opacity: 0.7;
-}*/
 
 footer {
   height: 55px;
@@ -403,6 +200,7 @@ footer #f_name {
   padding-left: 50px;
   opacity: 0.1;
 }
+
 
 
 /*  MEDIA QUERIES  */
@@ -429,7 +227,7 @@ footer #f_name {
 
 
   .container {
-    width: 100%;
+    min-width: 470px;
     padding-top: 225px;
     text-align: center;
   
@@ -452,18 +250,17 @@ footer #f_name {
   }
   
 
-  header li .name {
+   header li .name {
     font-family: 'Satisfy', crusive, sans-serif;
-    font-size: 115px;
+    font-size: 112px;
     margin-bottom: 30px;
   }
   
   header li h2 {
     font-family: 'Courgette';
-    font-size: 85px;
-    margin-bottom: 30px;
+    font-size: 95px;
+    margin-bottom: 25px;
   }
-  
   header li {
     list-style: none;
     line-height: 1.4;
@@ -472,16 +269,15 @@ footer #f_name {
   
   header li a {
     font-size: 60px;
-    padding-bottom: 7px;
+    padding-bottom: 6px;
     text-decoration-style: none;
     color: #384863;
     border-bottom-style: dashed;
   }
-
-  
   main {
     display: none;
   }
+  /*
   aside {
     width: 100%;
     height: 350px;
@@ -489,88 +285,10 @@ footer #f_name {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-  }
-  p.saying {
-    font-size: 60px;
-    width: 100%;
-    text-align: center;
-  }
-
-
-  p.fchild {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 480px), (orientation: landscape) {
+  }*/
   
-  .bg_for_logo img {
-    width: 500px;
-    height: 450px;
-  }
-
-
-  .container {
-    width: 100%;
-    padding-top: 225px;
-    text-align: center;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  
-  .nav {
-    margin-top: 10em;
-    width: 100%;
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-  }
-  
-
-  header li .name {
-    font-family: 'Satisfy', crusive, sans-serif;
-    font-size: 115px;
-    margin-bottom: 30px;
-  }
-  
-  header li h2 {
-    font-family: 'Courgette';
-    font-size: 85px;
-    margin-bottom: 30px;
-  }
-  
-  header li {
-    list-style: none;
-    line-height: 1.4;
-    margin-bottom: 20px;
-  }
-  
-  header li a {
-    font-size: 60px;
-    padding-bottom: 7px;
-    text-decoration-style: none;
-    color: #384863;
-    border-bottom-style: dashed;
-  }
-
-  
-  main {
-    display: none;
-  }
-  aside {
-    width: 100%;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+  .employees {
+      display: none;
   }
   p.saying {
     font-size: 60px;
@@ -582,13 +300,3 @@ footer #f_name {
     font-size: 20px;
   }
 }
-
- 
-
-/*
-@media only screen and (max-height: 750px) {
-  main img, main h2 {
-    display: none;
-  }
-}
-*/

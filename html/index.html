@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
+<!--<html lang="en">-->
 <head>
+  <!--<meta charset="utf-8"/>-->
   <title>Mighty Cat Inc.</title>
-  <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
-
-  <link rel="stylesheet" type="text/css" href ="../css/style.css">
+  <!--<link rel="stylesheet" type="text/css" href="../reset.css">-->
+  <link rel="stylesheet" type="text/css" href ="../style.css">
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500,700,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Proza+Libre:400,500,700" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,62 +17,61 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/3f8c3210b4.js" crossorigin="anonymous"></script>
-  
 
-  <script src="../js/script.js" async></script>
+
+  <!--<script src="../script.js" async></script>-->
 </head>
 <body>
 
+
+
   <header class="container">
     <div class="bg_for_logo" id="bg_logo">
-      <img src="../images/mclogo-3.png"/>
+      <img src="../mclogo-3.png" alt="Mighty Cat Logo"/>
     </div>
     <!-- Navigation Bar -->
       <nav role="navigation" class="nav">
         <ul class="navigate">
          <li><h1 class="name">Mighty Cat Inc.</h1></li>
          <li><h2>Pest Control</h2></li>
-         <li><a href="../html/datasheets.html">Safety Data Sheets</a></li>  
-         <li><a href="../html/contact.html">Contact</a></li>
+         <li><a href="../datasheets.html">Safety Data Sheets</a></li>  
+         <li><a href="../index.php">Contact</a></li>
        </ul>
      </nav>
-  </header>
+ </header>
 
-  <main>
-    <h2>Pests Commonly Serviced :</h2>
-    <img src="../images/pestlist.jpg" />
-  </main>
-    <aside>
-      <p class="saying">Serving the greater New York and Northern New Jersey Area for over 15 years!
-      </p>
-    </aside>
 
-    <div class="employeesJs" id="employeeTitle">
+<main>
+  <h2 class="pestlist">Pests Commonly Serviced :</h2>
+  <img src="../pestlist.jpg" alt="Pest List"/>
+  
+</main>
+<p class="saying">Serving the greater New York and Northern New Jersey Area for over 15 years!</p>
+
+ <div class="employees" id="employeeTitle">
       <div class="employeeWord">
         <i class="fas fa-angle-double-down fa-lg"></i>
         <p id='employee'> EMPLOYEES OF THE YEAR </p>
         <i id="rightI" class="fas fa-angle-double-up fa-lg"></i>
       </div>
       <div class ="pics" id="kitties">
-        <img  src="./luna.jpeg" class="cat" alt="Luna" width="300px" height="300px" />
-        <img  src="./zara.jpeg" class="cat" alt="Zara" width="300px" height="300px" />
-        <img  src="./mimi.jpeg" class="cat" alt="Mimi" width="300px" height="300px" />
-    
+        <img  src="../kitties/luna.jpeg" class="kit" alt="Luna" />
+        <p class="cname">Luna</p>
+        <img  src="../kitties/zara.jpeg" class="kit" alt="Zara" />
+        <p class="cname">Zara</p>
+        <img  src="../kitties/mimi.jpeg" class="kit" alt="Mimi" />
+        <p class="cname">Mimi</p>
       </div>
-    </div>
+ </div>
 
-    <footer class="footcontainer">
-      <p class="fchild">&copy; 2021 Mighty Cat Inc.</p>
-      <p class="fchild" id="f_name">&copy; Andres Casado 2021</p>
+
+<footer class="footcontainer">
+  <p class="fchild">&copy; 2021 Mighty Cat Inc.</p>
+  <p class="fchild" id="f_name">&copy; Andres Casado 2021</p>
   
-    </footer>
+</footer>
 
-
-
-
-    
-  </body>
+</body>
 </html>
 
 
